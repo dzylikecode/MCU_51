@@ -1,0 +1,8 @@
+g_WorkFolder = D:/Keil/C51/BIN
+g_make = mingw32-make
+g_rm = rm -f
+g_mov = mv
+g_c = $(g_WorkFolder)/C51.exe 
+g_asm = $(g_WorkFolder)/A51.exe
+g_linker = $(g_WorkFolder)/BL51.exe 
+g_output = $(g_WorkFolder)/OH51.exe 

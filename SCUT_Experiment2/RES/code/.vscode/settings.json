@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.docx": "Word",
+        "*.ppt": "PowerPoint",
+        "*.km": "mindmap",
+        "xc.h": "c",
+        "pic.h": "c",
+        "builtins.h": "c",
+        "pic16f877.h": "c",
+        "led.h": "c",
+        "type_traits": "c",
+        "port.h": "c",
+        "template.h": "c",
+        "show.h": "c",
+        "timer.h": "c"
+    }
+}

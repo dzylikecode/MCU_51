@@ -1,0 +1,13 @@
+Build/
+debug/
+dist/
+nbproject/
+config_Makefile
+!template/config_Makefile
+# 仅仅保留 rar 压缩包
+SCUT/RES/微机原理及应用课件-2021版
+PROTEUS/
+PROTEUS.zip
+*.7z
+Altium Designer 20/
+Makefile

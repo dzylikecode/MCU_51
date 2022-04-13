@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include",
+                "D:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90",
+                "D:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\proc"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__XC8",
+                "__PICC__",
+                "VS_CODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "E:/CPP/mingw64/bin/gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

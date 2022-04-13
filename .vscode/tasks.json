@@ -1,0 +1,103 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "BuildAll",
+            "type": "shell",
+            "command": "mingw32-make",
+            "args": [
+                "config_Makefile=${config:config_Makefile}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false,
+                "echo": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                {
+                    "owner": "cpp",
+                    "fileLocation": "absolute",
+                    "pattern": [
+                        {
+                            "regexp": "(ERROR|WARNING|NOTE|INFO) C(\\d*) IN LINE (\\d*) OF (.*?): (.*)",
+                            "file": 4,
+                            "line": 3,
+                            "code": 2,
+                            "severity": 1,
+                            "message": 5
+                        }
+                    ]
+                },
+                {
+                    "owner": "cpp",
+                    "fileLocation": "absolute",
+                    "pattern": [
+                        {
+                            "regexp": "(ERROR|WARNING|NOTE|INFO) L(\\d*): (.*)",
+                            "code": 2,
+                            "severity": 1,
+                            "message": 3,
+                        },
+                        {
+                            "regexp": ": (.*)",
+                            "line": 1,
+                        },
+                        {
+                            "regexp": ": (.*) ((.*))",
+                            "file": 1,
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "BuildSimple",
+            "type": "shell",
+            "command": "mingw32-make",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "args": [
+                "simple",
+                "config_Makefile=${config:config_Makefile}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "mingw32-make",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "args": [
+                "clean",
+                "config_Makefile=${config:config_Makefile}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "CleanAll",
+            "type": "shell",
+            "command": "mingw32-make",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "args": [
+                "cleanAll",
+                "config_Makefile=${config:config_Makefile}"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
